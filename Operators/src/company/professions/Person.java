@@ -8,7 +8,6 @@ public abstract class Person {
 	private LocalDate birthday;
 	private Period age;
 	
-	
 	public void setAge() {
 		age = Period.between(LocalDate.now(), birthday);
 	}
