@@ -1,6 +1,6 @@
 package wordStatic;
 
-public class Flower {
+public abstract class Flower {
 	
 	public Flower(String country, int shelfLife, double price) {
 		this.country = country;
