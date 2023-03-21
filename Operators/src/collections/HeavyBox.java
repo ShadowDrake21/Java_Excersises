@@ -1,6 +1,6 @@
 package collections;
 
-public class HeavyBox implements Comparable{
+public class HeavyBox implements Comparable<HeavyBox>{
 	private double weight;
 	
 	public HeavyBox(double weight) {
@@ -25,7 +25,7 @@ public class HeavyBox implements Comparable{
 	}
 
 	@Override
-	public int compareTo(Object box) {
-		return this.hashCode() - box.hashCode();
+	public int compareTo(HeavyBox box) {
+		return Double.compare(this.getWeight(), box.getWeight());
 	}
 }

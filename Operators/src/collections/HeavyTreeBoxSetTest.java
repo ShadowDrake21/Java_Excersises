@@ -15,5 +15,7 @@ public class HeavyTreeBoxSetTest {
 		for(HeavyBox x : treeSet) {
 			x.getDescription();
 		}
+		
+		treeSet.forEach(System.out::println);
 	}
 }
